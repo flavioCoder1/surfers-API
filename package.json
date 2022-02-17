@@ -1,0 +1,47 @@
+{
+  "name": "surfers-api",
+  "version": "1.0.0",
+  "description": "TypeScript + NodeJS API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "start:dev": "ts-node-dev src/index.ts",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:functional": "jest --projects ./test --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavioCoder1/surfers-API.git"
+  },
+  "keywords": [
+    "node",
+    "api",
+    "typescript"
+  ],
+  "author": "Flavio Cordeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavioCoder1/surfers-API/issues"
+  },
+  "homepage": "https://github.com/flavioCoder1/surfers-API#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^17.0.18",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2",
+    "ts-jest": "^27.1.3",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
